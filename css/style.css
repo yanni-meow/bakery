@@ -1,0 +1,557 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/* img { 
+    max-width: 100%;	
+    height: auto; 
+} */
+
+/* .footer {
+	display: flex;
+	justify-content: center; горизонталь при флексе
+	align-items: center; вертикаль при флексе 
+} */
+
+/*  ВЫРАВНЯТЬ ДИВ ВНУТИ ДУГОГО ДИВА
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);*/
+
+/* @media (max-width:1200px) {
+    .container {
+        max-width: 920px;
+    }
+}
+@media (max-width:970px) {
+    .container {
+        max-width: 700px;
+    }
+}
+@media(max-width:767px) {
+    .container {
+        max-width: 650px;
+    }
+} */	
+
+/*--------------------*/
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-size: 1rem;
+    font-family: 'Gayathri', sans-serif;} 
+
+.container {
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+/* HEADER ... MENU */
+
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/header_bg.png) center, url(../img/bg_shadow.png) center;
+    background-size: cover;
+}
+
+.header__menu {
+    height: 7.8vh;
+    background: rgba(86, 83, 76, .7);
+    font-family: 'Alegreya', serif;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Marck Script', cursive;
+    font-size: 3.3vh;
+}
+
+.header__navigation li {
+    display: inline;
+}
+
+.navigation-link {
+    padding: 0 1.6vh;
+    text-transform: uppercase;
+    font-size: 1.6vh;
+}
+
+.header__navigation_item:visited {
+    color: rgb(255, 255, 255);
+}
+
+.header__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-link img {
+    width: 2vh;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header__title-box {
+    color: rgb(255, 255, 255);
+}
+
+.header__title {
+    font-size: 5.75rem;
+    font-family: "PlayfairDisplay";
+    font-weight: bold;
+    text-shadow: 0px 1px 0px rgba(61, 48, 41, 0.004);  
+    text-align: center;
+    margin: 25% auto 10%;
+}
+
+.header__subtitle {
+    font-size: 1.5rem;
+    font-family: "ProximaNova";
+    line-height: 1.5;
+    letter-spacing: .15rem;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(61, 48, 41, 0.004);
+    width: 36vh;
+    margin: 0 auto;
+}
+
+.menu-link {
+    font-family: 'Alegreya', serif;
+    height: 5vh;
+    width: 12.5vh;
+    margin: 4rem auto;
+    background: rgba(86, 83, 76, .7);
+    font-family: 'Alegreya', serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* CAKES ... CHEF*/
+
+.cakes {
+    height: 100vh;
+    background: url(../img/cakes_bg.png) center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cakes__left, .cakes__right {
+    width: 40%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 1.714;
+    color: rgb(86, 83, 76);
+    font-family: "PlayfairDisplay";
+
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #c1a191;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "ProximaNova";
+}
+
+.text {
+    color: rgb(86, 83, 76);
+    line-height: 1.714;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 1rem;
+}
+
+.cakes__text {
+    max-width: 40vh;
+    margin: 0 auto;
+}
+
+.cakes__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    text-align: center;
+}
+
+.cakes__avatar p {
+    display: inline-block;
+    height: 3.75rem;
+    border-top: 2px solid #d7d5ca;
+    border-bottom: 2px solid #d7d5ca;
+    text-align: center;
+    padding: 5% 1.3rem;
+    font-size: 1.5rem;
+    color: rgb(86, 83, 76);
+}
+
+.cakes__quote {
+    display: flex;
+    align-items: center;
+    font-family: 'Marck Script', cursive;
+    color: #b6977e;
+    font-size: 1.5rem;
+}
+
+.cakes__quote_q {
+    align-items: center;
+    color: #b6b5b2;
+    font-family: 'Alegreya', serif;
+    font-size: 4rem;
+    padding: 0 3.4rem;
+}
+
+.cakes__images {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cakes__images img {
+    width: 50%;
+}
+
+#cakes__right__middle {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    font-size: 1.9rem;
+    color: rgb(201, 177, 118);
+    text-transform: uppercase;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/cakes_midle.png) center no-repeat;
+    background-size: contain;
+    opacity: .8;     
+}
+
+/* RECIPTES ... SLIDER */
+
+.reciptes {
+    height: 100vh;
+    background: url(../img/pancakes_bg.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reciptes__slider-box {
+    max-height: 500px; 
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.slider_left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.slider__photo img {
+    max-height: 500px; 
+}
+
+.slider_right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 55px;
+    background: #fff url(../img/pancakes_leftdown.png) no-repeat right bottom;
+}
+
+.slider__text {
+    height: 350px;
+    width: 100%;
+    padding: 1.5rem 0;
+    line-height: 1.714;
+}
+
+.slider__nav {
+    max-height: 150px;
+}
+
+.slider_right .slider__nav .slider__photo_small {
+    position: relative;
+    border-radius: 50%;
+    max-height: 90px;
+    max-width: 90px;
+    overflow: hidden;
+}
+
+.slider_right .slider__nav .slider__photo_small_box {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__photo_small img {
+    max-height: 90px;
+    display: block;
+}
+
+.recipte-time {
+    position: absolute;
+    right: 12%;
+    width: 12.5rem;
+    height: 12.5rem;
+    background: url(../img/reciptes_top.png);
+    box-shadow: 0 0 1rem;
+    text-align: center;
+    line-height: 3;
+
+}
+
+
+/* BREAKFAST ... MENU */
+
+.breakfast {
+    height: 100vh;
+    background: url(../img/breakfast_bg.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breakfast-box {
+    max-height: 600px; 
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breakfast_left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.breakfast__title {
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.2rem;
+    font-size: 3.75rem;
+    line-height: 1;
+    padding: 3.8rem 0;
+}
+
+.breakfast__subtitle {
+    letter-spacing: 0mm;
+}
+
+.breakfast__menu {
+    text-align: center;
+}
+
+.breakfast__menu__item {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    padding: 1.8rem 0;
+}
+
+.breakfast__menu__item_text {
+    color: #c2beba
+}
+
+.numbers {
+    color: #dfc691;
+}
+
+.breakfast_right {
+    width: 50%;
+    display: flex;
+}
+
+.breakfast__slider-box {
+    background: #f3f1e9;
+
+}
+
+.breakfast__page_first{
+    color: #56534c;
+    text-align: center;
+    border: 1px dashed #56534c93;
+    margin: .8rem;
+}
+
+.breakfast__page__top {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+
+.breakfast__page__top p {
+    width: 37%;
+    border-bottom: 1px solid #56534c93;
+}
+
+/* .breakfast__page__top img {
+    border: 1px solid #56534c93;
+    border-radius: 50%;
+} */
+
+.breakfast__page__body {
+    padding: 0 3.2rem;
+}
+
+.breakfast__page__btn {
+    display: inline-block;
+    border: 1px solid #56534c93;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    min-width: 190px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* SANDWICH ... */
+
+.sandwich {
+    height: 57.5rem;
+    background: #f3f1e9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sandwich_top {
+    text-align: center;
+}
+
+.sandwich__title {
+    height: 10vh;
+    background: url(../img/sandwich_top.png) center no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.sandwich__main {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sandwich_left {
+    width: 40%;
+}
+
+.sandwich__item {
+    text-align: center;
+}
+
+.sandwich_right {
+    width: 60%;
+    height: 80%;
+    background: url(../img/sandwich_main.png) center no-repeat;
+    background-size: cover auto;
+    border: 7px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/* .sandwich__recipe-box { */
+    
+/* } */
+
+.sandwich__recipe_item {
+    width: 10rem;
+    height: 10rem;
+    background: rgba(255, 255, 255,.7);
+    text-align: center;
+}
+
+.sandwich__recipe_item:nth-child(3) {
+    background: url(../img/reciptes_top.png);
+    background-size: contain;
+}
+
+/* FOOTER ... MENU */
+
+.footer {
+    height: 10rem;
+    background: #f3f1e9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #56534c;
+}
+
+.footer__navigation li {
+    display: inline;
+}
+
+.navigation-link {
+    padding: 0 1.6vh;
+    text-transform: uppercase;
+    font-size: 1.6vh;
+}
+
+.footer__navigation_item:visited {
+    color: rgb(86, 83, 76);
+}

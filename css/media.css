@@ -1,0 +1,43 @@
+@media (max-width: 1200px) {
+    .cakes__text {
+    }
+
+    .cakes__avatar {
+
+    }
+
+    .cakes__quote {
+
+    }
+
+    #cakes__right__middle {
+    width: ;
+    height: ;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .header__menu {
+
+    }
+
+    .header__navigation {
+
+    }
+    
+    .cakes__text {
+    }
+
+    .cakes__avatar {
+
+    }
+
+    .cakes__quote {
+
+    }
+
+    .cakes__images {
+
+    }
+}
