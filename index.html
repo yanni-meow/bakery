@@ -21,17 +21,21 @@
     <div class="container">
         
         <div class="header">
-            <div class="header__menu">
+            <div class="header__top">
                 <div class="header__logo logo">
                     Gustoso
                 </div>
-                <ul class="header__navigation">
-                    <li><a class="header__navigation_item navigation-link" href="#">Welcome</a> <span>~</span></li>
-                    <li><a class="header__navigation_item navigation-link" href="#">Menu</a> <span>~</span></li>
-                    <li><a class="header__navigation_item navigation-link" href="#">Reservations</a> <span>~</span></li>
-                    <li><a class="header__navigation_item navigation-link" href="#">News</a> <span>~</span></li>
-                    <li><a class="header__navigation_item navigation-link" href="#">Contact</a></li>
-                </ul>
+                <div class="header__menu">
+                    <label for="menu__burger_check"><span class="menu__burger"></span></label>
+                    <input type="checkbox" id="menu__burger_check">
+                    <ul class="header__navigation">
+                        <li><a class="header__navigation_item navigation-link" href="#">Welcome</a> <span>~</span></li>
+                        <li><a class="header__navigation_item navigation-link" href="#">Menu</a> <span>~</span></li>
+                        <li><a class="header__navigation_item navigation-link" href="#">Reservations</a> <span>~</span></li>
+                        <li><a class="header__navigation_item navigation-link" href="#">News</a> <span>~</span></li>
+                        <li><a class="header__navigation_item navigation-link" href="#">Contact</a><span></span></li>
+                    </ul>
+                </div>
                 <div class="header__social">
                     <a class="social-link" href="https://twitter.com"><img src="img/icoTwitter.png"/></a>
                     <a class="social-link" href="https://facebook.com"><img src="img/icoFacebook.png"/></a>
@@ -174,23 +178,23 @@
                     </div>
                     <div class="breakfast_right">
                         <div class="breakfast__slider-box slider">
-                            <div class="breakfast__page_first">
-                            <div class="breakfast__page__top subtitle">
-                                <p>Est.</p>
-                                <img src="img/breakfast_top.png"/>
-                                <p>1893</p>
-                            </div>
-                            <div class="breakfast__page__body title">
-                                Your morning<br/>Escape with Flair
-                                <div class="breakfast__page__body text">
-                                    Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+                            <div class="breakfast__page">
+                                <div class="breakfast__page__top subtitle">
+                                    <p>Est.</p>
+                                    <img src="img/breakfast_top.png"/>
+                                    <p>1893</p>
+                                </div>
+                                <div class="breakfast__page__body title">
+                                    Your morning<br/>Escape with Flair
+                                    <div class="breakfast__page__body text">
+                                        Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+                                    </div>
+                                </div>
+                                <div class="breakfast__page__btn">
+                                    <a href="#" class="subtitle">Read</a>
                                 </div>
                             </div>
-                            <div class="breakfast__page__btn">
-                                <a href="#" class="subtitle">Read</a>
-                            </div>
-                            </div>
-                            <!-- <div class="breakfast__page_second">
+                            <!-- <div class="breakfast__page">
                                 <div class="breakfast__page__top">
                                     <p>Est.</p>
                                     <img src="img/breakfast_top.png"/>
@@ -206,7 +210,7 @@
                                     <a href="#" class="subtitle">Read</a>
                                 </div>
                             </div>
-                            <div class="breakfast__page_third">
+                            <div class="breakfast__page">
                                 <div class="breakfast__page__top">
                                     <p>Est.</p>
                                     <img src="img/breakfast_top.png"/>
@@ -241,45 +245,49 @@
                     <div class="sandwich_left">
                         <div class="sandwich__item">
                             <img src="img/sandwich1.png"/>
-                            <div class="sandwich__item__subtitle subtitle">
-                                Class aptent 
-                            </div>
-                            <div class="sandwich__item__text text">
-                                Quot alienum persecuti ut eam, nam ad  atqui primis nusquam.
-                            </div>
+                            <div class="sandwich__item__box">  
+                                <div class="sandwich__item__subtitle subtitle">
+                                    Class aptent 
+                                </div>
+                                <div class="sandwich__item__text text">
+                                    Quot alienum persecuti ut eam, nam ad  atqui primis nusquam.
+                                </div>
+                            </div>  
                         </div>
                         <div class="sandwich__item">
                             <img src="img/sandwich2.png"/>
-                            <div class="sandwich__item__subtitle subtitle">
-                                Nulla eget
-                            </div>
-                            <div class="sandwich__item__text text">
-                                Nullam dictum felis eu pede mollis  pretium Integer tincidunt.
+                            <div class="sandwich__item__box">      
+                                <div class="sandwich__item__subtitle subtitle">
+                                    Nulla eget
+                                </div>
+                                <div class="sandwich__item__text text">
+                                    Nullam dictum felis eu pede mollis  pretium Integer tincidunt.
+                                </div>
                             </div>
                         </div>
                         <div class="sandwich__item">
                             <img src="img/sandwich3.png"/>
-                            <div class="sandwich__item__subtitle subtitle">
-                                Sed nibh purus
-                            </div>
-                            <div class="sandwich__item__text text">
-                                Aenean eleifend tellus leo ligula,  porttitor eu, consequat vitae.
+                            <div class="sandwich__item__box">  
+                                <div class="sandwich__item__subtitle subtitle">
+                                    Sed nibh purus
+                                </div>
+                                <div class="sandwich__item__text text">
+                                    Aenean eleifend tellus leo ligula,  porttitor eu, consequat vitae.
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="sandwich_right">
-                        <!-- <div class="sandwich__recipe-box"> -->
-                            <div class="sandwich__recipe_item subtitle">
-                                Prep <br/><span class="numbers" >15</span> <br/> <span class="text">mins</span>
+                            <div class="sandwich__recipe_item ">
+                                <span class="subtitle">Prep </span><span class="numbers" >15</span><span class="text">mins</span>
                             </div>
                             <div class="sandwich__recipe_item subtitle">
-                                Cook <br/><span class="numbers" >35</span><br/> <span class="text">mins</span>
+                                <span class="subtitle">Cook </span><span class="numbers" >35</span><span class="text">mins</span>
                             </div>
                             <div class="sandwich__recipe_item subtitle">
-                                Ready in <br/><span class="numbers" >50</span><br/> <span class="text">mins</span>
+                                <span class="subtitle">Ready in</span><span class="numbers" >50</span><span class="text">mins</span>
                             </div>
                             <a href="#" class="subtitle">Full recipe</a>
-                        <!-- </div> -->
                     </div>
                 </div>
             </div>
