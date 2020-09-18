@@ -6,6 +6,14 @@ $(document).ready(function() {
     $('.slider__text').slick({
         arrows: false,
         asNavFor: '.slider_left,.slider__nav',
+        responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                arrows: true,
+              }
+            },
+        ]
     });
     $('.slider__nav').slick({
         arrows: true,
@@ -18,7 +26,14 @@ $(document).ready(function() {
     });
 });
 
+
 // $(document).ready(function() { 
-//     $('.breakfast__slider-box"').slick({
-//         arrows: true,
-// })}
+//     $(window).width()
+// if ( > 769px) {
+//         $('.slider__text').slick({
+//             arrows: true,
+//             asNavFor: '.slider_left,.slider__nav',
+//         });
+//     });
+// }
+

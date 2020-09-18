@@ -36,7 +36,7 @@
     }
     
     #menu__burger_check:checked ~ .header__navigation {
-        transform: translateX(-40%);
+        transform: translateX(-45%);
     }
 
     .cakes {
@@ -67,14 +67,29 @@
         width: 65%;
     }
 
+
     .breakfast__title {
         padding: 2rem 0;
+    }
+
+    .reciptes__slider-box {
+        max-width: 80%;
     }
 }
 
 @media (max-width: 768px) {
     .html {
         font-size: 14px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        padding: .5rem 0;
     }
     
     .header__logo {
@@ -83,7 +98,6 @@
     
     .header__title {
         font-size: 3.5rem;
-        margin: 25% auto 10%;
     }
 
     .header__menu label {
@@ -91,12 +105,8 @@
         height: 15px;
     }
 
-    .subtitle {
-        padding: .5rem 0;
-    }
-
     #cakes__right__middle {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .cakes__right {
@@ -112,11 +122,53 @@
     }
 
     .breakfast__page__body {
-        padding: 0 1rem;
+        padding: 1rem .5rem;
     }
 
-    .reciptes {
+    .reciptes__slider-box {
+      flex-direction: column;
+      max-height: 80vh;
+    }
+
+    .slider_left, .slider_right {
+        display: flex;
+        justify-content: center;
+        max-height: 40vh;
+        overflow: hidden;
+    }
+
+    .slider_left {
+        width: 100%;
+    }
+
+    .slider__photo {
+        width: 100%;
+    }
+
+    .slider__photo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider_right {
+        height: max-content;
+        width: 100%;
+    }
+
+    .slider__text {
+        width: 100%;
+        height: max-content;
+        padding: 2rem 0;
+    }
+
+    .slider_right .slider__nav {
         display: none;
+    }
+
+    .recipte-time {
+        width: 7rem;
+        height: 7rem;
+        line-height: 1;
     }
 
     .sandwich {
@@ -134,21 +186,31 @@
     }
 
     .sandwich_left {
-        width: 80%;
+        width: 65%;
     }
 
     .sandwich_right {
         height: 50vh;
-        width: 85%;
+        width: 90%;
         margin: 2rem 0;
     }
 
     .sandwich__recipe_item {
-        width: 7rem;
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .slick-slider .slick-prev {
+        left: -45px;
     }
 
     .footer {
         flex-direction: column;
+    }
+
+    .footer__navigation {
+        padding: .1rem;
+        border: none;
     }
 
     .footer__navigation li span {
@@ -157,6 +219,14 @@
 }
 
 @media (max-width: 425px) {
+    .html {
+        font-size: 12px;
+    }
+
+    .title {
+        font-weight: 500;
+    }
+
     .header__top {
         padding: 0 1rem;
     }
@@ -175,8 +245,41 @@
         padding: 5% .5rem;
     }
 
+    #cakes__right__middle {
+        font-size: 1rem;
+    }
+
     .breakfast_left, .breakfast_right {
         width: 95%;
+    }
+
+    .breakfast__page__btn {
+        padding: .5rem 0;
+    }
+
+    .slider__text {
+        height: max-content;
+        width: 100%;
+        padding: .2rem 0;
+        line-height: 1.714;
+    }
+
+    .slider_right .slider__nav .slider__photo_small {
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+    .slider__nav {
+        max-height: 50px;
+    }
+
+    .recipte-time {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .sandwich_left {
+        width: 80%;
     }
 
     .sandwich__item {
@@ -188,4 +291,31 @@
         width: 40%;
         margin: 0 auto;
     }
+
+    /* .sandwich__recipe_item {
+        width: 20vw;
+        height: 20vw;
+    } */
 }
+
+@media (max-width: 375px) {
+    .html {
+        font-size: 10px;
+    }
+
+    #cakes__right__middle {
+        font-size: .8rem;
+    }
+    
+    .sandwich_right {
+        height: 40vh;
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .sandwich__recipe_item {
+        width: 12.5vh;
+        height: 12.5vh;
+    }
+}
+
