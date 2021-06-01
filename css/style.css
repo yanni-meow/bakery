@@ -75,6 +75,7 @@ body {
 .logo {
     font-family: 'Marck Script', cursive;
     font-size: 3.3vh;
+    cursor: pointer;
 }
 
 .header__menu {
@@ -627,7 +628,12 @@ body {
     border-bottom: 2px solid #56534c85;
     margin: 1rem 0;
 }
+.footer__navigation li {
+    display: flex;
+    align-items: center;
+}
 
+.footer__navigation_item,
 .footer__navigation_item:visited {
     color: rgb(86, 83, 76);
 }
